@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentA">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_fragA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fragment A"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nav_with_destination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nav_with_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Navigate with Destination"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nav_with_action"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragA" />
+
+    <Button
+        android:id="@+id/btn_nav_with_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Navigate with Action"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nav_with_safe_args"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_with_destination" />
+
+    <Button
+        android:id="@+id/btn_nav_with_safe_args"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Navigate with Safe-Args's Direction class to pass Arguments"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nav_to_activityB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_with_action" />
+
+    <Button
+        android:id="@+id/btn_nav_to_activityB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Navigate to Activity B"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nav_to_activityB_with_parcelize_data_class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_with_safe_args" />
+
+    <Button
+        android:id="@+id/btn_nav_to_activityB_with_parcelize_data_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Navigate to Activity B with parcelize data class"
+        app:layout_constraintBottom_toTopOf="@+id/ed_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_to_activityB" />
+
+    <EditText
+        android:id="@+id/ed_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:autofillHints="name"
+        android:hint="Edit text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_for_ed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_to_activityB_with_parcelize_data_class" />
+
+    <Button
+        android:id="@+id/btn_for_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Save using SaveStateHandle"
+        app:layout_constraintBottom_toTopOf="@+id/counter_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_text" />
+
+    <TextView
+        android:id="@+id/counter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Counter: 7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/counter_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_for_ed" />
+
+    <Button
+        android:id="@+id/counter_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Update Counter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter_tv"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

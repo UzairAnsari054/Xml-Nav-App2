@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.xmlnavapp2.FragmentA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a">
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.xmlnavapp2.FragmentB"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b">
+        <argument
+            android:name="userName"
+            android:defaultValue="John Wick"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.xmlnavapp2.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.example.xmlnavapp2.FragmentD"
+        android:label="fragment_d"
+        tools:layout="@layout/fragment_d" />
+</navigation>

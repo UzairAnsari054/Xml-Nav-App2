@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_menu_action_fragmentB"
+        android:icon="@drawable/ic_launcher_background"
+        android:menuCategory="secondary"
+        android:title="Option Menu Title of fragmentB" />
+    <item
+        android:id="@+id/option_menu_action_fragmentC"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:menuCategory="alternative"
+        android:title="Option Menu Title of fragmentC"/>
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/option_menu_action_fragmentD"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Option Menu Title of fragmentD"
+        app:showAsAction="always" />
+</menu>
